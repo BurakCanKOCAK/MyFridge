@@ -33,4 +33,9 @@ public class intro extends Activity {
 
     }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        this.finish();
+    }
 }

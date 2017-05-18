@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <uses-permission android:name="android.permission.INTERNET" />
 
         <activity
             android:name=".intro.intro"
@@ -26,6 +27,15 @@
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="com.bkocak.myfridge.login.Login"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".main.MyFridgeApp"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.bkocak.myfridge.main.MyFridgeApp"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
